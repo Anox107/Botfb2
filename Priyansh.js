@@ -98,7 +98,7 @@ writeFileSync(global.client.configPath + ".temp", JSON.stringify(global.config, 
 
 /////////////////////////////////////////
 //========= Load language use =========//
-/////////////////////////////////////////
+////////////////////////////////////////
 
 const langFile = (readFileSync(`${__dirname}/languages/${global.config.language || "en"}.lang`, { encoding: 'utf-8' })).split(/\r?\n|\r/);
 const langData = langFile.filter(item => item.indexOf('#') != 0 && item != '');
